@@ -1,0 +1,78 @@
+.table{
+    background-color: #fff;
+    margin-top: 80px;
+    width: 100%;
+    padding: 20px;
+    position: sticky;
+    top: 200px;
+    left: 250px;
+    table{
+        padding: 20px;
+        min-width: 100%;
+        display: flex;
+        border: 1px solid black;
+        flex-direction: column;
+        tr{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            border: 1px solid rgb(185, 158, 158);
+            border-collapse: collapse;
+            td, th{
+                width: 200px;
+                text-align: start;
+                padding-left: 5px;
+                &:nth-child(1){
+                    width: 40px;
+                }
+                &:nth-child(2){
+                    width: 140px;
+                }
+                &:nth-child(4){
+                    width: 100px;
+                }
+            }
+        }
+        tr:nth-child(even) {
+            background-color: #cdcdcd;
+            color: #c71515;
+            border: none;
+        }
+    }
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+    .buttonFunc{
+        border: none;
+        padding: 3px;
+        display: flex;
+        gap: 0 5px;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 3px;
+        &:nth-child(1){
+            background-color: yellow;
+
+        }
+        &:nth-child(2){
+            background-color: red;
+            color: #fff;
+
+        }
+    }
+}
+.phone{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    .minus, .plus{
+        border: 1px solid rgb(123, 127, 131);
+        background-color: #fff;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
